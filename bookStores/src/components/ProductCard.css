@@ -1,0 +1,92 @@
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-rating .star {
+    color: lightgray;
+  }
+  
+  .product-rating .star.filled {
+    color: gold;
+  }
+  
+  .product-price {
+    font-size: 1.5rem;
+    color: #e63946;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #f77f00;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #d66e00;
+  }
+  
+  .top-banner {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #2196f3;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+  }
+  @media (max-width: 768px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      padding: 10px;
+    }
+  
+    .product-card {
+      padding: 10px;
+    }
+  
+    .product-image {
+      height: 100px;
+    }
+  
+    .product-title {
+      font-size: 1rem;
+    }
+  
+    .product-price {
+      font-size: 1.2rem;
+    }
+  }
+  

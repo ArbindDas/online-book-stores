@@ -1,0 +1,1 @@
+export const RESET_LOGOUT = "reset_logout";
